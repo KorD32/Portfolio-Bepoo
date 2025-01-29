@@ -1,0 +1,67 @@
+.home-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.home-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-align: left;
+}
+
+.home-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+}
+
+.profile-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.home-title {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.home-position {
+    font-size: 1.8rem;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 1rem;
+    color: lightgray;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: white !important;
+    color: black !important;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: gray !important;
+    color: white !important;
+}
+
+body {
+    background-color: rgb(27, 25, 44);
+}

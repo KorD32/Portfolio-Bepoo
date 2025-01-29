@@ -1,0 +1,38 @@
+.footer {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    color: black;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-icons {
+    display: flex;
+    gap: 15px;
+    margin: 0 auto;
+}
+
+.icon-container {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+.icon {
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.icon-container:hover .icon {
+    color: gray;
+}

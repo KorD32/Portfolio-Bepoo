@@ -1,0 +1,73 @@
+.portfolio-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px; /* Jarak antar gambar lebih besar */
+    position: relative;
+}
+
+.portfolio-item {
+    position: relative;
+    transform: none; /* Tidak ada rotasi */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.portfolio-item img {
+    width: 450px; /* Ukuran gambar lebih besar */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Posisi gambar yang tidak beraturan (hanya naik-turun, tanpa rotasi) */
+.item-0 { top: 10px; }
+.item-1 { top: -15px; }
+.item-2 { top: 20px; }
+.item-3 { top: -10px; }
+.item-4 { top: 5px; }
+.item-5 { top: -20px; }
+.item-6 { top: 15px; }
+.item-7 { top: -5px; }
+.item-8 { top: 25px; }
+.item-9 { top: -10px; }
+
+/* Hover effect */
+.portfolio-item:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* Modal Overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 15px;
+}
+
+.modal-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
